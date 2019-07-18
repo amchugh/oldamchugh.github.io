@@ -6,7 +6,7 @@
 html,body{ 
 	width:100%;
 	height:100%;
-	background:#111;
+	background:transparent;
 }
 #particles-js{
   width: 100%;
@@ -15,6 +15,10 @@ html,body{
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0
 }
 #myname {
 	width:100%;
@@ -22,6 +26,7 @@ html,body{
 	vertical-align: middle;
 	color: white;
 	font-size:40;
+	position: absolute;
 }
 #subtitle {
 	width:100%;
@@ -29,6 +34,7 @@ html,body{
 	vertical-align: middle;
 	color: white;
 	font-size:20;
+	position: absolute;
 }
 *{
 	overflow-y: hidden;
@@ -47,16 +53,13 @@ html,body{
 <body>
 	<!-- scripts -->
 	<div id="particles-js">
-		<div >
-			<h2 id="myname">
-			<br><br><br>Aidan McHugh
-			</h2>
-			<br><br>
-			<h4 id="subtitle">
-				instagram: aidanmchughs
-			</h4>
-			
-		</div>
+		<h2 id="myname">
+		<br><br>Aidan McHugh
+		</h2>
+		<h4 id="subtitle">
+		<br><br><br><br><br><br>
+			instagram: aidanmchughs
+		</h4>
 	</div>
 	<script src="particles.js"></script>
 	<script type = "text/javascript" src = "main.js" ></script>
